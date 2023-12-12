@@ -20,4 +20,5 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
+    - run: chmod +x node_modules/.bin/mocha
     - run: sudo npm run test:unit
